@@ -120,7 +120,7 @@ r("off", {
 minetest.register_craft{
     output = "technowarp:off",
     recipe = {
-        {"technic:uranium_block", "technic:blue_energy_crystal", "technic:uranium_block"},
+        {"mesetech:active_mese_3", "technic:blue_energy_crystal", "mesetech:active_mese_3"},
         {"technic:blue_energy_crystal", "mesecons_luacontroller:luacontroller0000", "technic:blue_energy_crystal"},
         {"technic:stainless_steel_block", "technic:hv_cable0", "technic:stainless_steel_block"},
     },

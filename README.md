@@ -17,6 +17,7 @@
 * `{type = "error", error = "noreceiver"}`
 * `{type = "error", error = "notfound", name = <name>}`
 * `{type = "error", error = "power"}`
+* `{type = "error", error = "distance"}`
 ## Events
 * `{type = "event", event = "warped", name = "singleplayer", to = <vector>}`
 * `{type = "event", event = "arrived", name = "singleplayer", from = <vector>}`

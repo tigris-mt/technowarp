@@ -12,7 +12,7 @@
 
 # API
 ## Actions
-* `{type = "warp", name = <name>, dest = <vector>}`
+* `{type = "warp", name = <name>, dest = <vector>, yaw = <optional angle in radians>}`
 ## Errors
 * `{type = "error", error = "noreceiver"}`
 * `{type = "error", error = "notfound", name = <name>}`

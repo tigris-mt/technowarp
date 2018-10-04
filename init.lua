@@ -104,6 +104,9 @@ function technowarp.register(name, d)
                                     if p:get_player_name() == msg.name and vector.equals(vector.round(p:getpos()), vector.add(pos, vector.new(0, 1, 0))) then
                                         meta:set_int(class.uc .. "_EU_demand", d.demand)
                                         p:setpos(vector.add(dest, vector.new(0, 1, 0)))
+                                        if tonumber(msg.yaw) then
+                                            p:set_look_horizontal(tonumber(msg.yaw))
+                                        end
                                         reply(pos, {type = "event", event = "warped", name = msg.name, to = dest})
                                         reply(dest, {type = "event", event = "arrived", name = msg.name, from = pos})
                                         return
